@@ -1,6 +1,6 @@
-const startWapper = document.querySelector(".wapper .start");
-const rulesWapper = document.querySelector(".wapper .rules");
-const quesWapper = document.querySelector(".wapper .quiz-app");
+const startWapper = document.querySelector(".start");
+const rulesWapper = document.querySelector(".rules");
+const quesWapper = document.querySelector(".quiz-app");
 const startBtn = startWapper.querySelector(".button");
 const rulesBtn = rulesWapper.querySelector(".button");
 
@@ -109,6 +109,12 @@ startBtn.addEventListener("click", () => {
     startWapper.classList.add("hide");
     rulesWapper.classList.add("show");
 })
+
+// window.addEventListener("blur", () => {
+//     if (quesWapper.classList.contains("show")) {
+//         alert("Please remain on this tab only because timer of question will not stop")
+//     }
+// })
 
 rulesBtn.addEventListener("click", () => {
     rulesWapper.classList.remove("show");
