@@ -14,6 +14,8 @@ const option3 = document.querySelector(".quiz-app section .option3");
 const option4 = document.querySelector(".quiz-app section .option4");
 const nextBtnEle = document.querySelector(".quiz-app .button");
 
+alert(window.innerWidth);
+
 // questions for quiz
 const questions = [
     {
