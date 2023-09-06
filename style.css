@@ -239,7 +239,7 @@ body {
     margin-bottom: 1rem;   
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 394px) { 
     .start {
         transform: translate(1vw, 1vh) scale(0.9);
     }
