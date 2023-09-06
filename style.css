@@ -239,12 +239,18 @@ body {
     margin-bottom: 1rem;   
 }
 
+@media screen and (max-width: 654px) {
+    .quiz-app {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 394px) { 
     .start {
         transform: translate(1vw, 1vh) scale(0.9);
     }
 
     .quiz-app {
-        width: auto;
+        width: 100%;
     }
 }
