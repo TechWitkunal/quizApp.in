@@ -30,9 +30,10 @@ body {
 .quiz-app,
 .result {
     position: absolute;
-    top: 50%;
+    transform: scale(0.9);
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .start {
@@ -45,13 +46,14 @@ body {
     opacity: 1;
     pointer-events: auto;
     transition: all 0.3s ease-in-out;
-    transform: translate(-50%, -50%) scale(0.9);
+    /* transform: translate(-50%, -50%) scale(0.9); */
 }
 
 .start.hide {
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%) scale(1);
+    /* transform: translate(-50%, -50%) scale(1); */
+    transform: scale(1);
 }
 
 .start .button {
@@ -70,13 +72,14 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
-    transform: translate(-50%, -50%) scale(0.9);
+    /* transform: translate(-50%, -50%) scale(0.9); */
 }
 
 .rules.show {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    /* transform: translate(-50%, -50%) scale(1); */
+    transform: scale(1);
 }
 
 .rules header {
@@ -110,13 +113,14 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
-    transform: translate(-50%, -50%) scale(0.9);
+    /* transform: translate(-50%, -50%) scale(0.9); */
 }
 
 .quiz-app.show {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    /* transform: translate(-50%, -50%) scale(1); */
+    transform: scale(1);
 }
 
 .quiz-app header {
@@ -204,13 +208,14 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
-    transform: translate(-50%, -50%) scale(0.9);
+    /* transform: translate(-50%, -50%) scale(0.9); */
 }
 
 .result.show {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%) scale(1);
+    /* transform: translate(-50%, -50%) scale(1); */
+    transform: scale(1);
 }
 
 .result i {
@@ -232,4 +237,14 @@ body {
     margin-top: 1rem;
     border: 2px solid var(--skin-color);
     margin-bottom: 1rem;   
+}
+
+@media screen and (max-width: 394px) {
+    .start {
+        transform: translate(1vw, 1vh) scale(0.9);
+    }
+
+    .quiz-app {
+        width: auto;
+    }
 }
