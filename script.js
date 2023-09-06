@@ -110,12 +110,6 @@ startBtn.addEventListener("click", () => {
     rulesWapper.classList.add("show");
 })
 
-window.addEventListener("blur", () => {
-    if (quesWapper.classList.contains("show")) {
-        alert("Please remain on this tab only because timer of question will not stop")
-    }
-})
-
 rulesBtn.addEventListener("click", () => {
     rulesWapper.classList.remove("show");
     quesWapper.classList.add("show");
