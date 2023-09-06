@@ -133,6 +133,7 @@ function startTimer() {
     interval = setInterval(function () {
         if (timer == 0) {
             timerEle.innerHTML = "00";
+            wrongAns++;
             clearInterval(interval);
             allOption.forEach (i => {
                 i.style.pointerEvents = "none";
